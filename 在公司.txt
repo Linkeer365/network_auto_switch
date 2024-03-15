@@ -1,0 +1,9 @@
+@echo off
+
+echo 切换至公司网络配置...
+netsh interface ip set address "pg" static 10.191.18.182 255.255.255.0 10.191.18.254
+netsh interface ip set dns "pg" static 10.191.5.3
+netsh interface ip add dns "pg" 10.191.5.1 index=2
+echo 公司网络配置已应用。
+
+pause

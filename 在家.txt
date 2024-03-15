@@ -1,0 +1,8 @@
+@echo off
+
+echo 切换至家庭网络配置...
+netsh interface ip set address "pg" dhcp
+netsh interface ip set dns "pg" dhcp
+echo 家庭网络配置已应用。
+
+pause
